@@ -1,0 +1,40 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+.mainPane{
+    -fx-background-color: black;
+}
+
+.menubar_Anchor{
+    -fx-background-color:#282828; 
+    
+}
+
+.Table_Pnae{
+    -fx-background-color:black; 
+}
+.close_Button{
+    -fx-background-color: orangered;
+    -fx-background-radius: 1;
+}
+.min_Button{
+    -fx-background-color:lime; 
+    -fx-background-radius: 1;
+}
+.resize_Button{
+    -fx-background-color: orange;
+    -fx-background-radius: 1;
+}
+.search-TextField{
+    -fx-background-radius:1;
+}
+.newGroup-Button{
+    -fx-background-color: #282828;
+    -fx-background-image: url("../images/group.png");
+    -fx-background-size: 50;
+    
+}

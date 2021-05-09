@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="mainPane" onMouseDragged="#mainPaneDragged" onMousePressed="#mainPanePressed" prefHeight="695.0" prefWidth="1025.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tlpcidatabase.Controllers.Tlpcidatabase_MainController">
+    <stylesheets>
+        <URL value="@/tlpcidatabase/Css/tlpcidatabase_main.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane layoutY="-4.0" prefHeight="45.0" prefWidth="1028.0" styleClass="menubar_Anchor" stylesheets="@../Css/tlpcidatabase_main.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Button fx:id="closeButton" layoutX="1006.0" layoutY="5.0" mnemonicParsing="false" onAction="#closeButtonInitialized" onMouseEntered="#closeButtonEntered" onMouseExited="#closeButtonExited" opacity="0.5" prefHeight="25.0" prefWidth="8.0" rotate="90.0" styleClass="close_Button" AnchorPane.rightAnchor="10.0" />
+            <Button fx:id="minButton" layoutX="971.0" layoutY="5.0" mnemonicParsing="false" onAction="#minButtonInitialized" onMouseEntered="#minButtonEntered" onMouseExited="#minButtonExited" opacity="0.5" prefHeight="25.0" prefWidth="10.0" rotate="90.0" styleClass="min_Button" AnchorPane.rightAnchor="41.0" />
+         </children>
+      </AnchorPane>
+      <MenuBar layoutY="42.0" prefHeight="26.0" prefWidth="1028.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <AnchorPane layoutY="62.0" prefHeight="48.0" prefWidth="1028.0" styleClass="menubar_Anchor" stylesheets="@../Css/tlpcidatabase_main.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <padding>
+            <Insets left="100.0" />
+         </padding>
+         <children>
+            <TextField fx:id="searchField" layoutY="11.0" onMouseEntered="#searchFieldEntered" onMouseExited="#searchFieldEXited" opacity="0.6" prefHeight="26.0" prefWidth="168.0" promptText="Search Person" styleClass="search-TextField" stylesheets="@../Css/tlpcidatabase_main.css" />
+            <Button fx:id="newGroupButton" layoutX="186.0" layoutY="2.0" mnemonicParsing="false" onAction="#newGroup_ButtonInitialized" onMouseEntered="#newGroup_ButtonEntered" onMouseExited="#newGroup_ButtonExited" prefHeight="45.0" prefWidth="50.0" styleClass="newGroup-Button" />
+         </children>
+      </AnchorPane>
+      <Separator layoutX="164.0" layoutY="55.0" orientation="VERTICAL" prefHeight="638.0" prefWidth="7.0" stylesheets="@../Css/tlpcidatabase_main.css" />
+      <ListView layoutY="109.0" prefHeight="587.0" prefWidth="166.0" AnchorPane.bottomAnchor="2.0" AnchorPane.topAnchor="109.0" />
+      <AnchorPane layoutX="167.0" layoutY="111.0" prefHeight="587.0" prefWidth="861.0" styleClass="Table_Pnae" stylesheets="@../Css/tlpcidatabase_main.css">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <TabPane layoutX="198.0" layoutY="112.0" prefHeight="592.0" prefWidth="861.0" side="LEFT" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <tabs>
+                <Tab text="Untitled Tab 1">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="616.0" prefWidth="675.0">
+                           <children>
+                              <TableView layoutX="133.0" layoutY="53.0" prefHeight="616.0" prefWidth="550.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                <columns>
+                                  <TableColumn prefWidth="75.0" text="C1" />
+                                  <TableColumn prefWidth="75.0" text="C2" />
+                                </columns>
+                              </TableView>
+                              <Separator layoutX="549.0" layoutY="-3.0" orientation="VERTICAL" prefHeight="622.0" prefWidth="7.0" />
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+                <Tab text="Untitled Tab 2">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                  </content>
+                </Tab>
+              </tabs>
+            </TabPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

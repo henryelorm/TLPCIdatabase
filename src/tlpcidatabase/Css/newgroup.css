@@ -1,0 +1,16 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+
+.menubar_Anchor{
+    -fx-background-color:#282828; 
+    
+}
+.menubar_small{
+    -fx-background-color: white;
+    -fx-background-radius: 12
+}

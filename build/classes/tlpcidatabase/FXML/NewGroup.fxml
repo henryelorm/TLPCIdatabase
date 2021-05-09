@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="pane" onMouseDragged="#paneDragged" onMousePressed="#panePressed" prefHeight="174.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tlpcidatabase.Controllers.NewGroupController">
+    <stylesheets>
+        <URL value="@/tlpcidatabase/Css/newgroup.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane layoutY="-2.0" prefHeight="30.0" prefWidth="600.0" styleClass="menubar_Anchor" stylesheets="@../Css/newgroup.css">
+         <children>
+            <AnchorPane layoutX="180.0" layoutY="7.0" prefHeight="17.0" prefWidth="200.0" styleClass="menubar_small">
+               <children>
+                  <Text layoutX="60.0" layoutY="13.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New Group">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <TextField fx:id="newGroup_Field" layoutX="97.0" layoutY="41.0" prefHeight="25.0" prefWidth="283.0" />
+      <Label layoutX="8.0" layoutY="43.0" text="Group Name">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="cancel" layoutX="534.0" layoutY="135.0" mnemonicParsing="false" onAction="#cancelButton_initialiazed" text="Cancel" />
+      <Button fx:id="finish" layoutX="476.0" layoutY="135.0" mnemonicParsing="false" onAction="#finishButton_Initialized" text="Finish" />
+   </children>
+</AnchorPane>
